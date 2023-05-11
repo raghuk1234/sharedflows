@@ -4,7 +4,7 @@
     <Properties/>
     <IPRules noRuleMatchAction="ALLOW">
         <!--MatchRule action="ALLOW">
-            <SourceAddress mask="32">104.139.107.2</SourceAddress>
+            <SourceAddress mask="32">104.139.107.3</SourceAddress>
         </MatchRule-->
         <MatchRule action="DENY">
             <SourceAddress mask="24">104.139.107.2</SourceAddress>
