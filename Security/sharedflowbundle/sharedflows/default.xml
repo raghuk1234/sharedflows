@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>Spike-Arrest</Name>
+    </Step>
+    <Step>
+        <Name>Access-Control</Name>
+    </Step>
+    <Step>
+        <Condition>(request.header.apikey != null)</Condition>
+        <Name>Verify-API-Key</Name>
+    </Step>
+    <Step>
+        <Condition>(request.header.apikey == null)</Condition>
+        <Name>OAuth-v20-1</Name>
+    </Step>
+    <Step>
+        <Name>QuotaLimit</Name>
+    </Step>
+    <Step>
+        <Condition>request.header.content-type == "application/json"</Condition>
+        <Name>JSON-Threat-Protection-1</Name>
+    </Step>
+    <Step>
+        <Condition>request.header.content-type == "application/xml"</Condition>
+        <Name>XML-Threat-Protection-1</Name>
+    </Step>
+    <Step>
+        <Name>Regular-Expression-Protection-1</Name>
+    </Step>
+</SharedFlow>

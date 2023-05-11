@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegularExpressionProtection continueOnError="false" enabled="true" name="Regular-Expression-Protection-1">
+    <DisplayName>Regular Expression Protection-1</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <JSONPath>
+            <Expression>$.name</Expression>
+            <Pattern>^[a-zA-Z '.-]*$</Pattern>
+        </JSONPath>
+    </JSONPayload>
+    <Source>request</Source>
+</RegularExpressionProtection>

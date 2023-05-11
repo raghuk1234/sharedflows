@@ -1,0 +1,20 @@
+<SharedFlowBundle revision="17" name="Security">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1681436273491</CreatedAt>
+    <LastModifiedAt>1681436273491</LastModifiedAt>
+    <Policies>
+        <Policy>OAuth-v20-1</Policy>
+        <Policy>QuotaLimit</Policy>
+        <Policy>Spike-Arrest</Policy>
+        <Policy>Verify-API-Key</Policy>
+        <Policy>Access-Control</Policy>
+        <Policy>JSON-Threat-Protection-1</Policy>
+        <Policy>XML-Threat-Protection-1</Policy>
+        <Policy>Regular-Expression-Protection-1</Policy>
+    </Policies>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

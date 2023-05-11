@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AccessControl continueOnError="false" enabled="true" name="Access-Control">
+    <DisplayName>Access Control</DisplayName>
+    <Properties/>
+    <IPRules noRuleMatchAction="ALLOW">
+        <!--MatchRule action="ALLOW">
+            <SourceAddress mask="32">104.139.107.2</SourceAddress>
+        </MatchRule-->
+        <MatchRule action="DENY">
+            <SourceAddress mask="24">104.139.107.2</SourceAddress>
+        </MatchRule>
+    </IPRules>
+</AccessControl>
